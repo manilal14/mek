@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginRight="8dp"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="24dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:src="@drawable/ic_car_key"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discover Amazing Spots"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Material Design Icons' growing icon collection allows designers and developers targeting various platforms to download icons in the format, color and size they need for any project. "/>
+    </LinearLayout>
+    
+
+
+</android.support.v7.widget.CardView>

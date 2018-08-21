@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">mek</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="how_it_works">How it Works</string>
+    <string name="smart_parking_featured">Smart Parking Featured</string>
+    <string name="featured_venues">Featured Venues</string>
+    <string name="where_to_park">Where to Park?</string>
+    <string name="everywhere_you_want_to_park">Everywhere you want to Park</string>
+    <string name="for_more_automobile_related_problem_visit">For more automobile related problem, visit</string>
+</resources>
