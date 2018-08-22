@@ -4,98 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
     android:background="@color/home_background"
     android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
 
     <FrameLayout
-
+        android:id="@+id/main_frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/colorPrimary">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="56dp"
-                    android:layout_height="56dp"
-                    android:paddingLeft="0dp"
-                    android:paddingRight="8dp"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="8dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_car"
-                    />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:orientation="horizontal"
-                android:paddingBottom="8dp">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="3"
-                    android:layout_marginRight="80dp"
-                    android:layout_height="match_parent"
-                    android:text="Find Your Perfect Spot to Park."
-                    android:textSize="20sp"
-                    android:textColor="@color/white"/>
-
-                <LinearLayout
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:padding="8dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/circle"
-                        android:src="@drawable/ic_parked_car"
-                        android:elevation="8dp"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Locate me"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:textSize="8dp"
-                        android:textColor="@color/white"/>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-
-        <!-- Main Layout There is a top padding of 56dp-->
-        <FrameLayout
-            android:paddingTop="112dp"
-            android:id="@+id/main_frame_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </FrameLayout>
-
+        android:layout_height="match_parent">
 
 
     </FrameLayout>
+
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/botton_navigation"
@@ -111,8 +33,6 @@
         app:menu="@menu/home_bottom_nav">
 
     </android.support.design.widget.BottomNavigationView>
-
-
 
 
 </android.support.constraint.ConstraintLayout>

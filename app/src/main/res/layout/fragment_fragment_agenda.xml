@@ -12,6 +12,77 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Below toolbar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/ic_car" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="80dp"
+                    android:layout_weight="3"
+                    android:text="Find Your Perfect Spot to Park."
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle"
+                        android:elevation="8dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_parked_car" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Locate me"
+                        android:textColor="@color/white"
+                        android:textSize="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--How it Works-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,6 +114,7 @@
 
         </LinearLayout>
 
+        <!--Smart Parking Featured-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,7 +124,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="4dp"
                 android:text="@string/smart_parking_featured"
                 android:textColor="@color/black"
                 android:textSize="24sp"
@@ -73,6 +145,7 @@
             </android.support.v7.widget.RecyclerView>
         </LinearLayout>
 
+        <!--Featured Venues-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,9 +154,9 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_marginTop="24dp"
                 android:text="@string/featured_venues"
                 android:textColor="@color/black"
@@ -91,22 +164,22 @@
                 android:textStyle="bold" />
 
             <View
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_width="80sp"
                 android:layout_height="4dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_marginTop="4dp"
                 android:background="@drawable/round_corner" />
 
             <android.support.v7.widget.RecyclerView
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:id="@+id/recycler_view3_agenda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="32dp">
-            </android.support.v7.widget.RecyclerView>
+                android:layout_marginBottom="32dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="24dp"></android.support.v7.widget.RecyclerView>
         </LinearLayout>
 
+        <!--Where to Park-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -137,168 +210,177 @@
 
         </LinearLayout>
 
+        <!--Everywhere you want to park-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
+            android:orientation="vertical"
             android:paddingBottom="32dp"
-            android:paddingTop="32dp"
-
-            android:orientation="vertical">
+            android:paddingTop="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/everywhere_you_want_to_park"
                 android:textColor="@color/black"
                 android:textSize="24sp"
-                android:textStyle="bold"
-                android:layout_gravity="center"/>
+                android:textStyle="bold" />
 
             <View
                 android:layout_width="80sp"
                 android:layout_height="4dp"
-                android:layout_marginTop="4dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="4dp"
                 android:background="@drawable/round_corner" />
 
             <TextView
-                android:layout_marginTop="32dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
                 android:text="6+"
                 android:textColor="@color/colorPrimary"
                 android:textSize="48sp"
-                android:textStyle="bold"
-                android:layout_gravity="center"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Cities"
                 android:textColor="@color/black"
                 android:textSize="24sp"
-                android:textStyle="bold"
-                android:layout_gravity="center"/>
+                android:textStyle="bold" />
 
-            <!--Here a horizontal Recycler view will be there-->
-            <TextView
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/recycler_view5_agenda"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="56dp"
-                android:layout_marginRight="56dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/>
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
 
             <!--RecyclerView Indicator-->
 
+            <com.rbrooks.indefinitepagerindicator.IndefinitePagerIndicator
+                android:id="@+id/recycler_view5_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:dotColor="@color/colorPrimary"
+                app:selectedDotColor="@color/colorPrimary"
+
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                app:dotRadius="4dp"
+                app:supportRTL="true"
+                app:selectedDotRadius="8dp"
+
+                />
+
             <Button
-                android:layout_marginTop="32dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="View Locations"
-                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:background="@color/white"
+                android:paddingBottom="16dp"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:textSize="16dp"
+                android:text="View Locations"
+                android:textAllCaps="false"
                 android:textColor="@color/colorPrimary"
-                android:layout_gravity="center"
-                android:background="@color/white"/>
+                android:textSize="16dp"
+                android:layout_marginBottom="8dp"/>
         </LinearLayout>
 
-
+        <!--Parking Provider-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/light_black"
+            android:orientation="vertical"
             android:paddingBottom="32dp"
-            android:paddingTop="32dp"
-            android:orientation="vertical">
+            android:paddingTop="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:text="Are you a"
                 android:fontFamily="serif"
+                android:text="@string/are_you_a"
                 android:textColor="@color/white"
-                android:textSize="24sp"
-                android:textStyle="bold"/>
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:text="Parking Provider?"
                 android:fontFamily="serif"
+                android:text="@string/parking_provider"
                 android:textColor="@color/white"
-                android:textSize="24sp"
-                android:textStyle="bold"/>
+                android:textSize="24sp"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="e-mail address"
-                android:layout_marginTop="40dp"
-                android:layout_marginRight="?actionBarSize"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:textStyle="italic"
-                android:paddingBottom="16dp"
-                android:textColorHighlight="@color/white"
+                android:layout_marginRight="?actionBarSize"
+                android:layout_marginTop="40dp"
                 android:backgroundTint="#f5b041"
-                android:textColor="@color/white"/>
+                android:hint="e-mail address"
+                android:paddingBottom="16dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textStyle="italic" />
 
 
             <Button
-                android:layout_marginTop="32dp"
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Request Demo"
-                android:textAllCaps="false"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="32dp"
+                android:paddingBottom="16dp"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:paddingTop="16dp"
-                android:paddingBottom="16dp"
+                android:text="Request Demo"
+                android:textAllCaps="false"
                 android:textSize="16dp" />
 
         </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:paddingBottom="8dp"
-        android:paddingTop="32dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
+        <!--Logo-->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/for_more_automobile_related_problem_visit"
-            android:textSize="16sp"
-            android:layout_gravity="center"
-            android:gravity="center"/>
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="24dp"
+            android:paddingTop="32dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MekVahan"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/for_more_automobile_related_problem_visit"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="MekVahan"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
 
-
-    </LinearLayout>
-
-
-
+        </LinearLayout>
 
 
     </LinearLayout>

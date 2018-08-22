@@ -12,4 +12,6 @@
     <string name="where_to_park">Where to Park?</string>
     <string name="everywhere_you_want_to_park">Everywhere you want to Park</string>
     <string name="for_more_automobile_related_problem_visit">For more automobile related problem, visit</string>
+    <string name="are_you_a">Are you a</string>
+    <string name="parking_provider">Parking Provider?</string>
 </resources>

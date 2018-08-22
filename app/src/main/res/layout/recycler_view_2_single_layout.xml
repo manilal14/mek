@@ -14,9 +14,8 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/circle"
         android:layout_marginRight="24dp"
-        android:padding="8dp"
+        android:padding="12dp"
         android:src="@drawable/ic_find" />
-
 
     <TextView
         android:id="@+id/title"

@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
-        android:src="@mipmap/one"/>
+        android:src="@mipmap/park1"/>
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
