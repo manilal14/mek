@@ -78,9 +78,9 @@ public class FragmentAgenda extends Fragment {
         // Featured venues
 
         List<ParkingZone> parkingZoneList = new ArrayList<>();
-        parkingZoneList.add(new ParkingZone(R.mipmap.one,"Parking Zone Name"));
-        parkingZoneList.add(new ParkingZone(R.mipmap.two,"Parking Zone Name"));
-        parkingZoneList.add(new ParkingZone(R.mipmap.three,"Parking Zone Name"));
+        parkingZoneList.add(new ParkingZone(R.mipmap.park1,"Parking Zone Name"));
+        parkingZoneList.add(new ParkingZone(R.mipmap.park3,"Parking Zone Name"));
+        parkingZoneList.add(new ParkingZone(R.mipmap.park2,"Parking Zone Name"));
 
 
         RecyclerView recyclerView3 = view.findViewById(R.id.recycler_view3_agenda);
@@ -97,11 +97,11 @@ public class FragmentAgenda extends Fragment {
 
         List<Container> containerList4 = new ArrayList<>();
 
-        containerList4.add(new Container(R.drawable.ic_find,"Free Parking",desc4));
-        containerList4.add(new Container(R.drawable.ic_location,"Paid Parking",desc4));
-        containerList4.add(new Container(R.drawable.ic_navigation,"Garage Parking",desc4));
-        containerList4.add(new Container(R.drawable.ic_time,"College Parking",desc4));
-        containerList4.add(new Container(R.drawable.ic_parking,"Airport Parking",desc4));
+        containerList4.add(new Container(R.drawable.ic_free,"Free Parking",desc4));
+        containerList4.add(new Container(R.drawable.ic_rupee,"Paid Parking",desc4));
+        containerList4.add(new Container(R.drawable.ic_garage,"Garage Parking",desc4));
+        containerList4.add(new Container(R.drawable.ic_college,"College Parking",desc4));
+        containerList4.add(new Container(R.drawable.ic_plane,"Airport Parking",desc4));
 
         RecyclerView recyclerView4 = view.findViewById(R.id.recycler_view4_agenda);
         recyclerView4.setHasFixedSize(true);
